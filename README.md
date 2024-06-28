@@ -34,3 +34,49 @@ The main objective is that to perform EDA on the given dataset and draw useful c
 - total_of_special_requests: total no. of special request.
 - reservation_status: Whether a customer has checked out or canceled,or not showed
 - reservation_status_date: Date of making reservation status.
+  # Data preparing and cleaning
+1. check is there any null value or missing values a. In this dataset we get 112593 null value in 'company' column so we have replaced the null values with 0. b. In the 'agent' column we have also get 16340 so we have replaced it with 0. c. In country we can not set the country values as 0 becuase it contains country codes representing different countries. So instead of replacing it with zero we have replaced it with the mode value in country column. Mode is nothing but just the most repeating value. d. Children Column has the count of children then we replaced missing values with mean values.
+2. Dropping some coloumn which does not make any sense Several rows in the dataset contains values that does not make any sense like having no adults, children and babies so we directly deleted it by using drop.
+3. Change the data type Check the types of datatypes and converting it into int64.
+   # Exploratory data analysis
+1. Hotels type ratio?
+2. which month has maximum arrival in the year ?
+3. Yearwise booking ?
+4. From which country the most guests came?
+5. Most Number of Guest ?
+6. How many booking cancelled ?
+7. monthly cancellations?
+8. market segment wise booking?
+9. What is the Percentage of repeated guests?
+10. Which type of food is mostly preferred by the guests?
+11. which is the busiest month for hotel booking?
+12. Which is the busiest month for Resort and City Hotel?
+13. night stay?
+14. Which is the home country of guest?
+# conclusion
+
+1) The pie chart reveals that 66% of the hotels in the dataset are city hotels and the other 34% are resort hotels.
+
+(2)the months of November to March are off-peak periods for hoteliers. Between June and the end of August, attendance is at its peak, it is the high season.
+
+(3)the booking for city hotel is higher than resort yearwise.
+
+(4) Most of the guests came from european countries, with most of guests coming from Portugal.
+
+(5) the most number of guests are 48483 which is from Portugal.
+
+(6)more than 30000 booking were cancelled in city hotel followed by more than 10000 in resort hotel.
+
+(7) most of the transient customers had cancelled the booking.
+
+(8)Most of the market_segment used Online TA and Offline TA/TO
+
+(9)Repeated guests are very few which is only 3.1 %. In order to retained the guests , hotels/resort management should take feedback from the guests in order to imporve their services.
+
+(10)most preferred meal type by the guests is BB.
+
+(11)most of the busiest months are July and August
+
+(12)City hotel has maximum booking from the month April to September but after that there is fall down in booking Now for the Resort hotel March-May,June-August and November-January is busiest month
+
+
